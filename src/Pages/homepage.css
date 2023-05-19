@@ -1,0 +1,349 @@
+.Homepage{
+    position: relative;
+}
+
+#carouselExampleAutoplaying .carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+}
+
+#carouselExampleAutoplaying .carousel-item::before{
+    content: '';
+    background-image: 
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.5), rgba(0,0,0,1)
+    );
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel-caption{
+    bottom: 50px;
+}
+.carousel-caption h1{
+  font-size: 46px;  
+}
+
+form .search{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+form .text-input:focus, email-text:focus{
+    outline: 0px !important;
+    border: 0;
+    box-shadow: inset 0 -1px 0 #ddd;
+    
+}
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 0 0 0;
+  /* box-shadow: inset 0 -1px 0 #faf9f9; */
+}
+
+Link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item .nav-link{
+    font-weight: bold;
+}
+
+.navbar-brand img{
+    height: 40px;
+    width: 40px;
+}
+
+.acc-cart-center{
+    display: none;
+}
+
+/* modal */
+
+.modal {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0000055;
+    z-index: 10;
+}
+.rfq {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c9;
+    z-index: 15;
+}
+
+.modals{
+    background-color: #00000055;
+          width: 100%;
+          height: 100vh;
+          position: fixed;
+          z-index: 10;
+          top: 65px;
+}
+
+.cart-bar{
+    position: absolute;
+    right:0;
+    height: 100%;
+    background-color: black;
+    width: 30%;
+    color: white;
+}
+
+.remove{
+    position: absolute;
+    right: 22px;
+}
+
+.badge{
+    position: absolute;
+    font-size: 7px;
+    left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14px;
+    width: 14px;
+}
+
+/* .cart-item-container{
+    overflow-y: scroll;
+} */
+
+.price{
+    width: 200px;
+    height: 30px;
+}
+.add{
+    width: 25px;
+}
+
+/* .product{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+} */
+
+/* card */
+
+.products{
+    border: none;
+}
+
+.add-icon{
+    height: 30px;
+}
+.add-icon:hover{
+    cursor: pointer;
+}
+
+.prices .add-icon:hover{
+    color: orange;
+}
+
+.card-item img{
+    height: 100px;
+    width: 100px;
+}
+
+.card{
+    overflow: hidden;
+}
+
+.card-item{
+    transition: 0.5s;
+}
+.card-item:hover{
+    transform: scale(1.08);
+}
+.card-image{
+    position: relative;
+}
+
+.card-image i{
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.card:hover .show, .card-image i:hover{
+    visibility: visible;
+    cursor: pointer;
+}
+
+/* footer */
+
+.email input:focus{
+    background-color: red;
+    border-top: none;
+    outline: none;
+}
+
+.email input::placeholder {
+    color: white !important;
+    opacity: 1;
+    }
+.rfq-form input {
+    color: rgb(228, 226, 226) !important;
+    opacity: 1;
+    }
+.rfq-form input::placeholder {
+    color: rgb(230, 228, 228) !important;
+    opacity: 1;
+    }
+
+.icon{
+    height: 38px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+.request-quote{
+    margin-bottom: 130px;
+}
+
+.rfq{
+    padding-top: 15% !important;
+}
+
+@media screen and (min-width:397px) and (max-width: 951px) {
+    .cart-bar{
+        position: absolute;
+        right:0;
+        height: 100%;
+        background-color: black;
+        width: 80%;
+        color: white;
+        overflow-y: scroll;
+        z-index: 100;
+    }
+
+    .nav-section{
+        width: 100%;
+    }
+    .email-text{
+        width: 180px;
+        border-bottom: 1px solid white !important;
+    }
+    .email{
+        border-bottom: 0px !important;
+    }
+    .email .btn{
+        background: rgb(255, 191, 0) !important;
+    }
+}
+
+@media screen and (max-width:412px) {
+    .cart-bar{
+        position: absolute;
+        right:0;
+        height: 100%;
+        background-color: black;
+        width: 90%;
+        color: white;
+        overflow-y: scroll;
+        z-index: 100;
+    }
+    /* .Link{
+        margin: 0;
+
+    } */
+    .acc-cart-center{
+        display: block;
+    }
+    input[type=email]{
+       width: 70%; 
+    }
+    #carouselExampleAutoplaying .carousel-item img{
+        object-fit: cover;
+        object-position: center;
+        height: 25vh;
+        overflow: hidden;
+    }
+    
+    #carouselExampleAutoplaying .carousel-item::before{
+        content: '';
+        background-image: 
+        linear-gradient(
+            to bottom,
+            transparent, rgba(0,0,0,0.8)
+        );
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+    }
+    
+}
+
+/* footer */
+p a{
+    text-decoration: none;
+    color: black;
+}
+p a:hover{
+    color: orange;
+}
+
+.social .icon{
+    transition: 0.4s;
+}
+
+.fa-facebook{
+    color: rgb(7, 7, 161);
+}
+.fa-whatsapp{
+    color: rgb(7, 137, 16);
+}
+.fa-instagram{
+    color: palevioletred;
+}
+.fa-twitter{
+    color: rgb(23, 146, 146);
+}
+
+.social .icon:hover{
+    background-color: orange !important;
+    transform: scale(1.2);
+}
+.social .icon{
+    background-color: rgb(248, 238, 42) !important;
+    
+}
+
+.footer{
+	background-color:#79715d;
+}

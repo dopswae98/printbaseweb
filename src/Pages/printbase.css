@@ -1,0 +1,42 @@
+
+
+@media screen and (max-width: 400px) {
+    .hero-img{
+        height: 170px !important;
+        /* visibility: hidden; */
+        position: relative;
+    }
+    .img{
+        position: relative;
+        height: 20px;
+        transform: rotate(0deg);
+        
+    }
+    .welcome{
+        margin-top: 150px;
+    }
+    .hero-img{
+        position: absolute;
+        left: 20%
+    }
+    .logo-img{
+        height: 70px !important;
+        width: 70px !important;
+    }
+}
+
+.tab::after{
+    content:"";
+    background-color:rgb(177, 14, 14) !important;
+    height: 5px;
+    width: 17%;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+
+.service{
+    background-color: #bfae8e !important;
+}
+
+
