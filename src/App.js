@@ -1,8 +1,11 @@
 // import { useState } from "react";
 //import logo from "./logo.svg";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.js";
+
+
+
+// import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/js/bootstrap.js";
 import Homepage from "./Pages/Homepage";
 import "font-awesome/css/font-awesome.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
