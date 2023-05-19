@@ -9,6 +9,11 @@ import { Link } from "react-router-dom";
 import image1 from "../img/mockup1.jpg";
 import "./printbase.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 const PrintbaseSolutions = () => {
   return (
     <div className="overflow-hidden" style={{ backgroundColor: "#ccb99c" }}>
@@ -186,7 +191,17 @@ const PrintbaseSolutions = () => {
           </nav>
         </div>
       </section>
-      <section className="hero container py-5 position-relative">
+      <section
+        className="hero container py-5 position-relative"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        // data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="row">
           <div className="welcome col-md-4 pt-5">
             <p className="text-danger fw-bold">Welcome to Our Company</p>
@@ -210,10 +225,7 @@ const PrintbaseSolutions = () => {
             </div>
           </div>
         </div>
-        <div
-          className="img"
-          style={{ position: "absolute", top: 20, left: 0, right: 50 }}
-        >
+        <div style={{ position: "absolute", top: 20, left: 0, right: 50 }}>
           <img
             className="hero-img"
             src={image1}
@@ -228,7 +240,17 @@ const PrintbaseSolutions = () => {
           />
         </div>
       </section>
-      <section className="serices pt-5 container">
+      <section
+        className="serices pt-5 container"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        // data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="rows d-block d-md-flex flex-row">
           <div className="service text-center me-1 col-md-2 py-4 d-flex text-align-center justify-content-center flex-column bg-light">
             <i className="fa fa-address-card fs-1 text-danger"></i>
@@ -256,7 +278,17 @@ const PrintbaseSolutions = () => {
           </div>
         </div>
       </section>
-      <section className="about-section py-5 container">
+      <section
+        className="about-section py-5 container"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        // data-aos-once="false"
+        // data-aos-anchor-placement="top-center"
+      >
         <p className="text-danger">About Us</p>
         <h1 className="h1">Printing Solutions For Your Company</h1>
         <div className="solution-container pt-4">
@@ -338,7 +370,17 @@ const PrintbaseSolutions = () => {
           </div>
         </div>
       </section>
-      <section className="services container">
+      <section
+        className="services container"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        // data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <p className="text-danger">Services</p>
         <h1 className="h1">What we do</h1>
         <div className="rows d-flex flex-row">
@@ -390,7 +432,17 @@ const PrintbaseSolutions = () => {
           </div>
         </div>
       </section>
-      <section className="best-plan container my-5">
+      <section
+        className="best-plan container my-5"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        // data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <p className="text-danger text-center ">pricing table</p>
         <h1 className="h1 text-center">Choose Your Best Plan</h1>
         <div className="d-flex pt-3 justify-content-center">
@@ -838,7 +890,7 @@ const PrintbaseSolutions = () => {
           <div className="row">
             <div className="col-md-3">
               <p className="fw-bold">About Us</p>
-              <p className="text-muted">
+              <p className="text-secondary">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
                 reprehenderit voluptatibus, consequatur quis voluptatum fugit
                 expedita!
@@ -846,7 +898,7 @@ const PrintbaseSolutions = () => {
             </div>
             <div className="col-md-3">
               <p className="fw-bold">Other Pages</p>
-              <div className="links text-muted">
+              <div className="links text-secondary">
                 <div className="page-links d-flex justify-content-between">
                   <p>About Us</p>
                   <p>Carrers</p>
@@ -868,7 +920,7 @@ const PrintbaseSolutions = () => {
             </div>
             <div className="col-md-3">
               <p className="fw-bold">Get In Touch</p>
-              <div className="links text-muted">
+              <div className="links text-secondary">
                 <p>000 0000 0000</p>
                 <p>kotrumenterprises@gmail.com</p>
                 <p>6 Nigel Phillip Avenue Eastlea Harare, Zimbabwe</p>
@@ -876,7 +928,7 @@ const PrintbaseSolutions = () => {
             </div>
             <div className="col-md-3">
               <p className="fw-bold">Subscribe Us</p>
-              <p className="text-muted">
+              <p className="text-secondary">
                 Subscribe us & receive our office & update directly into your
                 inbox.
               </p>
